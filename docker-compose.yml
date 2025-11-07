@@ -2,8 +2,7 @@ version: "3.8"
 
 services:
   kuboard-sso-oauth-proxy:
-    build: .
-    image: kuboard-sso-oauth-proxy:latest
+    image: ctwon800/kuboard-sso-oauth-proxy:latest
     container_name: kuboard-sso-oauth-proxy
     ports:
       - "8080:8080"
@@ -17,6 +16,6 @@ services:
       CASDOOR_TOKEN_URL: "https://casdoor.example.com/api/login/oauth/access_token"
       CASDOOR_USERINFO_URL: "https://casdoor.example.com/api/get-account"
       GITLAB_BASE: "https://gitlab.example.com"
-    restart: unless-stopped
+    restart: always
 
 

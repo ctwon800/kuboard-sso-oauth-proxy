@@ -59,7 +59,7 @@ docker run --rm -p 8080:8080 \
   -e CASDOOR_TOKEN_URL="https://casdoor.example.com/api/login/oauth/access_token" \
   -e CASDOOR_USERINFO_URL="https://casdoor.example.com/api/get-account" \
   -e GITLAB_BASE="https://gitlab.example.com" \
-  kuboard-sso-oauth-proxy:latest
+  ctwon800/kuboard-sso-oauth-proxy:latest
 ```
 
 - 从源码运行（可选）
