@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+language: "zh-CN"
+early_access: false
+
+reviews:
+  profile: "chill"               # 审查风格：chill/assertive
+  request_changes_workflow: false
+  high_level_summary: true
+  review_status: true
+  auto_review:
+    enabled: true                # 对 PR 自动触发审查
+    drafts: false                # 不审查草稿 PR
+
+chat:
+  auto_reply: true
+
+# 可选：路径过滤（示例保留为最小集成，可按需启用）
+# path_filters:
+#   - "!**/*.bin"
+#   - "!**/*.csv"
+#   - "!**/*.log"
+#   - "!**/node_modules/**"
+#   - "!**/dist/**"
+#   - "!**/.venv/**"
+
+
