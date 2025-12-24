@@ -175,4 +175,4 @@ EOF
 docker run --rm -p 8080:8080 --env-file ./.env kuboard-sso-oauth-proxy:latest
 ```
 
-
+<!-- CodeRabbit integration test -->
